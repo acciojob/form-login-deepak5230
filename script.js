@@ -1,17 +1,24 @@
 function getFormvalue() {
-	    const form = document.getElementById('form1');
-    
-    // Retrieve the values of the first name and last name inputs
-    const firstName = form.elements['fname'].value;
-    const lastName = form.elements['lname'].value;
-    
-    // Display the values using alert()
-  alert(`First Name: ${firstName}, Last Name: ${lastName}`);
+
+	const form_name=document.querySelector("#form1")
+
+	const f_name=form.querySelector("fname")
+	const l_name=form.querySelector("lname")
+
+
+	const submit_b=document.querySelector("Submit")
+
+	submit_b.addeventlistener("click", alert)
+
+	function alert(){
+		alert(`firstname:${f_name},lastname: ${l_name} `)
+	}
 
 	
+
 }
 
 	
     
 
-}
+
