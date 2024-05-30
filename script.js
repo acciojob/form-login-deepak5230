@@ -1,19 +1,13 @@
 function getFormvalue() {
 
-    
-            // Get the values of the input fields
-            var firstName = document.getElementById("fname").value;
-            var lastName = document.getElementById("lname").value;
+const f_name=document.getElementById("fname").value
 
-            // Combine the first and last names
-            var fullName = firstName + " " + lastName;
+const l_name=document.getElementById("lname").value
 
-            // Display an alert with the full name
-            alert(fullName);
-        }
-	}
+	alert(`${f_name} ${l_name}`)
 
 	
+	  
 
 }
 
